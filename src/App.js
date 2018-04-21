@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Friends from './components/Friends'
 
 class App extends Component {
   render() {
@@ -21,24 +24,5 @@ class App extends Component {
     );
   }
 }
-
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-    <p>Welcome to ようこそ</p>
-  </div>
-)
-const About = () => (
-  <div>
-    <h2>About</h2>
-    <p>フレンズに投票するページです</p>
-  </div>
-)
-const Friends = () => (
-  <div>
-    <h2>Friends</h2>
-    <p>ここにフレンズのリストを書きます</p>
-  </div>
-)
 
 export default App;

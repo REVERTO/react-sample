@@ -6,6 +6,7 @@ import { AppBar, MenuItem, Drawer } from 'material-ui'
 
 import Landing from './components/Landing'
 import SignIn from './components/SignIn'
+import Home from './components/Home'
 
 class App extends Component {
 
@@ -50,8 +51,9 @@ class App extends Component {
             </ul>
             <hr/>
 
-            <Route path='/' component={Landing}/>
-            <Route path='/signin' component={SignIn}/>
+            <Route exact path='/' component={Landing} />
+            <Route path='/signin' component={SignIn} />
+            <Route path='/home' component={Home} />
           </div>
         </MuiThemeProvider>
       </Router>
